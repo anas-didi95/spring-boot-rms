@@ -7,7 +7,7 @@ services:
       dockerfile: Dockerfile
     command: sleep infinity
     ports:
-      - "8000:8000"
+      - "8080:8080"
     volumes:
       - ./:/workspace
       - ./m2-docker:/home/vscode/.m2
