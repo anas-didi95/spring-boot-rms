@@ -6,10 +6,9 @@ import org.springframework.web.bind.annotation.RequestMethod;
 import org.springframework.web.bind.annotation.RestController;
 
 @RestController
-@RequestMapping(value = "/hello")
 public class HelloController {
 
-  @RequestMapping(value = "/", method = RequestMethod.GET)
+  @RequestMapping(value = "/hello", method = RequestMethod.GET)
   public ResponseEntity<String> getGreeting() {
     return ResponseEntity.ok().body("Hello World");
   }
